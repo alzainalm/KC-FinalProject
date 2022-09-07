@@ -1,0 +1,246 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #EBE2D0;
+    text-transform: uppercase;
+}
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    padding: 10px 100px;
+    box-sizing: border-box;
+    transition: 4s;
+    background-color:#724D3B;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+nav.color{
+   background-color: rgba( #5C4234,#5C4234 , #5C4234, #5C4234);
+   height: 80px;
+   padding: 10px 50px;
+   
+
+}
+nav  .logo {
+    float: left;
+    display: flex;
+    justify-content: left;
+    word-spacing: 2px;
+    font-family: sans-serif;
+
+}
+nav .logo img {
+    height: 80px;
+    transition: 4s;
+}
+nav .logo img {
+    height: 60px;
+}
+
+nav ul {
+    float: right;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav ul li {
+    list-style: none;
+
+}
+nav ul li a {
+    line-height: 80px;
+    color: #EBE2D0;
+    padding: 5px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 1s;
+    font-family: 'Aboreto', cursive;
+}
+nav ul li a.active
+{
+color: #724D3B;
+background-color: #EBE2D0;
+}
+nav ul li a:hover
+
+{
+color: #724D3B;
+background-color: #EBE2D0;
+}
+section.sec1 {
+    width: 100%;
+    height: 100vh;
+    background: url(./bookBackground.jpg);
+    background-size: cover;
+}
+section.sec2 {
+    width: 100%;
+    height: 500px;
+    background-color: #EBE2D0;
+display: flex;
+justify-content: center;
+}
+.about{
+    width: 600px;
+    height:  300px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 3px solid #724D3B;
+    margin-top: 30px;
+    padding: 10px;
+    box-shadow: 12px 12px 2px 1px #5C4234;
+    font-family:  sans-serif;
+}
+.about h2{
+    font-size: 20px;
+    color: #724D3B;
+    font-family:  sans-serif;
+}
+.about p {
+    font-size: 15px;
+    color: black;
+    font-family:  sans-serif;
+}
+section.sec3{
+    margin-top: 0; 
+    width: 100%;
+    height:100vh;
+    background-color: #5C4234;
+    font-family:  sans-serif;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 5px;
+    margin: 10px;
+    padding: 10% 50px;
+
+      
+    
+}
+.maincontainer{
+    position: relative;
+    width: 250px;
+    height: 320px;
+   
+}
+.maincontainer a {
+text-decoration: none;
+color: #724D3B;
+
+
+}
+.book{
+    position: absolute;
+    width: 250px;
+    height: 320px;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+    clear:left;
+    height:25px;
+    
+   
+}
+.book:hover{
+    transform: rotateY(180deg);
+}
+.front{
+    position: absolute;
+    width: 250px;
+    height: 320px;
+    backface-visibility: hidden;
+
+}
+
+.back{
+    position: absolute;
+    width: 250px;
+    height: 320px;
+    backface-visibility: hidden;
+    background-color: #EBE2D0;
+    transform: rotateY(180deg);
+    padding: 10px;
+    color: #724D3B;
+    font-family: sans-serif;
+}
+.contact{
+    width: 100%;
+    height: 300px;
+    background-color: #adc178;
+display: flex;
+justify-content: center;
+text-align: center;
+flex-direction: column;
+margin: 100px;
+padding: 50px;
+box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
+.contact h1 {
+margin-bottom: 20px;
+margin-top: 5px;
+font-size: 60px;
+font-weight: bolder;
+color: #724D3B;
+
+}
+form{
+    padding:50px;
+    width:60%;
+    margin: auto;
+}
+.field{
+    margin-bottom: 25px;
+    width: 100%;
+    display: grid;
+    position: relative;
+}
+label{
+    color:#724D3B;
+    background-color: #EBE2D0;
+    font-size: xx-large;
+    letter-spacing: 2px;
+    width: 700px;
+    padding: 0;
+   font-weight: bolder;
+   position: absolute;
+   height: 50px;
+
+}
+.input{
+height: 50px;
+outline: none;
+width: 700px;
+padding-left: 20%;
+box-sizing: border-box;
+
+}
+
+.field:hover label {
+    width: 18%;
+    background-color: #724D3B;
+    color: #EBE2D0;
+    transition: all 0.5s ease-in-out;
+}
+#submit{
+    height: 50px;
+    width:150px;
+    margin-top: 20px;
+    border-radius: 2px;
+    border: none;
+    font-size: large;
+    font-weight: bolder;
+    color: #724D3B;
+    background-color: #EBE2D0;
+    font-family:  sans-serif;
+    text-transform: uppercase;
+}
+#submit:hover{
+background-color: #724D3B;
+color: #EBE2D0;
+transition: 0.3s ease-in-out;
+
+
+}
